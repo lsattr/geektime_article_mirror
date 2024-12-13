@@ -1,0 +1,9 @@
+version: '3'
+services:
+  geektime-article-server:
+    build: .
+    ports:
+      - "7070:7070"
+    volumes:
+      - ./Article:/web
+    restart: always
